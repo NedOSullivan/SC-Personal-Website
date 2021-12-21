@@ -30,19 +30,19 @@ img {
     padding: 10px;
     margin: 10px;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
 }
 
 a {
     padding: 10px;
     margin: 10px;
     display: flex;
-    justify-content: center;
+    justify-content: center; 
 }
 
 .images { 
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
     display: none;
 }
 
@@ -64,9 +64,42 @@ a {
     font-size: 30px;
 }
 
-.image-carousel { 
+.prev, .next, #pause-play-timer { /* added pause play and arrows*/
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #182C31;
+    font-weight: bold;
+    font-size: 40px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  .next {
+    right: 0;
+    border-radius: 36px 0 0 36px;
+  }
+
+  .prev {
+      left: 0;
+      border-radius: 36px 0 0 36px;
+  }
+
+  #pause-play-timer { /* added */
+    position: relative;
+    top: 0;
+    transition: top ease 0.5s;
+    }
+      
+.image-carousel {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
     display: flex;
     justify-content: center;
-} 
-
+  }
 
